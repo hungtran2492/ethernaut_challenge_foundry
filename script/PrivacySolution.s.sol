@@ -8,7 +8,7 @@ import {Privacy} from "../src/Privacy.sol";
 contract PrivacyAttack {
   constructor(Privacy _privacyInstance) {
     _privacyInstance.unlock(bytes16(bytes32(0x20634ebcb14f31875a4025c0073c0bb5c3ed6199a9d574d8d7dd2b9ad2ddd9cc)));
-    console.log("Locked: ",_privacyInstance.locked);
+    console.log("Locked: ", _privacyInstance.locked());
   }
 }
 
