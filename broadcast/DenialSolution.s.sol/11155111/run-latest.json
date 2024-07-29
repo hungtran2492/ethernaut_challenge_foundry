@@ -1,0 +1,48 @@
+{
+  "transactions": [
+    {
+      "hash": null,
+      "transactionType": "CREATE",
+      "contractName": "DenialAttack",
+      "contractAddress": "0xf990fe6a6d1493e4ee0ebda92bb9eadf149671ea",
+      "function": null,
+      "arguments": null,
+      "transaction": {
+        "from": "0xcfc07edef2649dcbbb0ccf99dbb46a3d66bd80d0",
+        "gas": "0x29497",
+        "value": "0x0",
+        "input": "0x6080604052600080546001600160a01b03191673db62dec9a0ae77b5053ffc58fadff5de276cd5d9179055348015603557600080fd5b50600054604051631387164560e21b81523060048201526001600160a01b0390911690634e1c591490602401600060405180830381600087803b158015607a57600080fd5b505af1158015608d573d6000803e3d6000fd5b5050505060cd8061009f6000396000f3fe60806040526004361060205760003560e01c80638058d4c014603057600080fd5b36602b575b6025565b005b600080fd5b348015603b57600080fd5b5060296000805460408051633ccfd60b60e01b815290516001600160a01b0390921692633ccfd60b9260048084019382900301818387803b158015607e57600080fd5b505af11580156091573d6000803e3d6000fd5b5050505056fea2646970667358221220c4c74adda6c84510577ddb4c7accf519dac7c6c179380244ed6b058bafca6a9d64736f6c634300081a0033",
+        "nonce": "0x24f",
+        "chainId": "0xaa36a7"
+      },
+      "additionalContracts": [],
+      "isFixedGasLimit": false
+    },
+    {
+      "hash": null,
+      "transactionType": "CALL",
+      "contractName": "DenialAttack",
+      "contractAddress": "0xf990fe6a6d1493e4ee0ebda92bb9eadf149671ea",
+      "function": "attackDenial()",
+      "arguments": [],
+      "transaction": {
+        "from": "0xcfc07edef2649dcbbb0ccf99dbb46a3d66bd80d0",
+        "to": "0xf990fe6a6d1493e4ee0ebda92bb9eadf149671ea",
+        "gas": "0x55a985ed",
+        "value": "0x0",
+        "input": "0x8058d4c0",
+        "nonce": "0x250",
+        "chainId": "0xaa36a7"
+      },
+      "additionalContracts": [],
+      "isFixedGasLimit": false
+    }
+  ],
+  "receipts": [],
+  "libraries": [],
+  "pending": [],
+  "returns": {},
+  "timestamp": 1722245116,
+  "chain": 11155111,
+  "commit": "c5c25d1"
+}
